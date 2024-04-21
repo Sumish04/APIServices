@@ -10,5 +10,6 @@ namespace APIServices.Context.BLOB_Storage
         public BlobDbContext(DbContextOptions<BlobDbContext> options) : base(options) { }
 
         public DbSet<Documents> Documents { get; set; }
+        public DbSet<Pictures> Pictures { get; set; }
     }
 }

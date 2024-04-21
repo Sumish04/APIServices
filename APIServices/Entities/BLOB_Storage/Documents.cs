@@ -1,7 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace APIServices.Entities.BLOB_Storage
 {
+    [Table("Documents")]
     public class Documents
     {
         [Key]

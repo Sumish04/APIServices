@@ -1,4 +1,5 @@
 ﻿using APIServices.Entities.CV_Storage;
+using APIServices.TransferObjects;
 using Microsoft.EntityFrameworkCore;
 
 namespace APIServices.Context.CV_Storage
@@ -8,5 +9,6 @@ namespace APIServices.Context.CV_Storage
         public CVDbContext(DbContextOptions<CVDbContext> options) : base(options) { }
 
         public DbSet<Users> Users { get; set; }
+
     }
 }
